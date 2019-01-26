@@ -1,16 +1,18 @@
 .grid {
     margin: 0 auto;
     width: 80vw;
-    max-width: 60vh;
+    max-width: 70vh;
     height: 80vw;
-    max-height: 60vh;
+    max-height: 70vh;
     font-size: 1rem;
     border-color: black;
     border: solid;
 }
+
 .row {
     display: flex;
 }
+
 .box {
     background: white;
     flex: 1 0 auto;
@@ -19,12 +21,14 @@
     border-color: black;
     border-width: thin;
 }
+
 .box:after {
     content: "";
     float:left;
     display: block;
     padding-top: 100%;
 }
+
 .box .inner {
     position: absolute;
     left: 0;
@@ -35,3 +39,16 @@
     align-items: center;
     justify-content: center;
 }
+
+button {
+    background-color: rgb(194, 36, 36);
+    width: 200px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    display: block;
+}
+
+button:hover {background-color: rgb(221, 69, 69)}
