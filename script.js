@@ -1,4 +1,5 @@
 const grid = document.querySelector('.grid');
+const div = document.querySelector('div');
 
 function createGrid(size) {
     for (i = 0; i < size; i++) {
@@ -17,3 +18,7 @@ function createGrid(size) {
 }
 
 createGrid(16);
+
+div.addEventListener("mouseover", function(e) {
+    e.target.style.backgroundColor = "black";
+})
